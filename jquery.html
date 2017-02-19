@@ -1,0 +1,23 @@
+<!doc type html>
+<html>
+<head>
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+</head>
+
+<body>
+    <h1 id="title" onclick="sayGoodbye();"> Satyam </h1>
+</body>
+
+<script type="text/javascript">
+    function sayGoodbye(){
+        console.log("goodbye");
+        $("#title").html("Shivam");
+        $("#title").click(function () {
+            $("#title").html("Satyam");
+            $("#title").off("click");
+        });
+    };
+</script>
+</html>
